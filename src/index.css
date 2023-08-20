@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --menuBarWidth: 200px;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-heading-color;
+  }
+}
+
+@layer components {
+  #root {
+    @apply font-sans text-tcolor relative min-h-screen w-full;
+  }
+  .wrap {
+    @apply px-1.5 pr-2.5  md:mx-12 lg:mx-20;
+  }
+}
+
+/* .overlay {
+  width: 100%;
+}
+
+.overlay.visible {
+  width: calc(theme(width.screen) - var(--menuBarWidth));
+} */

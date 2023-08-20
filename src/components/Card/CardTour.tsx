@@ -1,24 +1,6 @@
 import React from 'react'
 import { RiMapPin2Line, RiStarFill } from 'react-icons/ri'
 
-export type Tour = {
-  id: string
-  title: string
-  city: string
-  distance: number
-  price: number
-  maxGroupSize: number
-  desc: string
-  reviews: {
-    name: string
-    rating: number
-  }[]
-  // eslint-disable-next-line react/require-default-props
-  avgRating?: number
-  photo: string
-  featured: boolean
-}
-
 const CardTour = ({ avgRating = 0, ...rest }: Tour) => {
   const countReview = rest.reviews.length
   return (

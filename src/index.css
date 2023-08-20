@@ -26,8 +26,13 @@
   .wrap {
     @apply px-1.5 pr-2.5  md:mx-12 lg:mx-20;
   }
+  .service {
+    @apply hover:shadow-lg hover:border-hidden hover:rounded-md duration-200 hover:-translate-y-[2px] px-4 py-4 md:pt-0 space-y-3  rounded-md  md:rounded-none md:rounded-br-md border-t-[1.5px] border-l-[1.5px] md:border-t-0 md:border-l-0 border-b-[1.5px] border-r-[1.5px] border-slate-200;
+  }
+  .menuList {
+    @apply fixed z-40 md:shadow-none md:translate-x-0 top-0 bottom-0 right-0  flex flex-col items-center pt-4 space-x-0 space-y-2 bg-white shadow-md md:relative md:pt-0 md:mr-12 xl:mr-36 md:justify-between md:space-x-4  md:space-y-0 md:flex-row duration-150 w-[200px];
+  }
 }
-
 /* .overlay {
   width: 100%;
 }

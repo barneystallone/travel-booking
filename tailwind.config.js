@@ -17,6 +17,9 @@ export default {
         xs: '420px',
         tablet: '600px',
       },
+      gridTemplateColumns: {
+        auto: 'repeat(auto-fill,auto)',
+      },
     },
   },
   plugins: [],

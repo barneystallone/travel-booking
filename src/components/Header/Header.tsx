@@ -40,13 +40,10 @@ const Header = () => {
         <div className='flex items-center justify-between '>
           {/* ======= NavLink ======== */}
           <div
-            className={classNames(
-              'fixed z-40 md:shadow-none md:translate-x-0 top-0 bottom-0 right-0  flex flex-col items-center pt-4 space-x-0 space-y-2 bg-white shadow-md md:relative md:pt-0 md:mr-12 xl:mr-36 md:justify-between md:space-x-4  md:space-y-0 md:flex-row duration-150 w-[200px]',
-              {
-                'translate-x-0 shadow-xl border border-slate-200': overlayActive,
-                'translate-x-[100%]': !overlayActive,
-              }
-            )}
+            className={classNames('menuList', {
+              'translate-x-0  shadow-xl border border-slate-200': overlayActive,
+              'translate-x-[100%] md:translate-x-0': !overlayActive,
+            })}
           >
             {navLink.map((item, index) => (
               <div key={index}>
